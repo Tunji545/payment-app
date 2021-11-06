@@ -78,8 +78,8 @@ function Home() {
         <Grid container item xs={12} sm={7}>
           <Grid item xs={6} />
           <Grid item xs={6} display="flex">
-            <Grid item xs={1} />
-            <Grid item xs={7}>
+            <Grid item xs={0} sm={1} />
+            <Grid item xs={6} sm={7}>
               <Box
                 component="img"
                 alt=""
@@ -96,7 +96,7 @@ function Home() {
                 marginLeft={theme.spacing(4)}
               />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={6} sm={4}>
               <Box
                 component="img"
                 alt=""
@@ -206,7 +206,7 @@ function Home() {
         <Grid item>
          <Button color="info" variant="contained" sx={btn2}>Complete Payment</Button>
         </Grid>
-        <Grid item paddingTop={theme.spacing(2)}>
+        <Grid item paddingTop={theme.spacing(4)}>
           <Typography variant="h2" fontSize="2rem">TOTAL:#2556.64</Typography>
         </Grid>
       </Grid>

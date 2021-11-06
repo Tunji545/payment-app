@@ -19,13 +19,11 @@ const root = {
   [theme.breakpoints.down('sm')]: {
     "& .MuiTypography-root": {
       fontSize: "1rem"
-    }
-  },
-  [theme.breakpoints.down('sm')]: {
+    },
     "& img": {
       display: "none"
     }
-  }
+  },
 }
 
 function Navbar() {
