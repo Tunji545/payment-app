@@ -18,7 +18,12 @@ const root = {
   },
   [theme.breakpoints.down('sm')]: {
     "& .MuiTypography-root": {
-      fontSize: "1.125rem"
+      fontSize: "1rem"
+    }
+  },
+  [theme.breakpoints.down('sm')]: {
+    "& img": {
+      display: "none"
     }
   }
 }

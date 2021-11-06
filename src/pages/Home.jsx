@@ -11,12 +11,13 @@ import Paypal from "../assets/paypal.png"
 import AdjustIcon from '@mui/icons-material/Adjust';
 import AlbumIcon from '@mui/icons-material/Album';
 
+
 const bgBox = {
-  backgroundColor: "#bc6c90",
+  background: `linear-gradient(to right, #c51162, #4a148c)`,
   width: 450,
   height: 350,
   [theme.breakpoints.down('sm')]: {
-    "& .MuiTypography-root": {
+    "& .MuiTypography-h2": {
       fontSize: "1.125rem"
     }
   }
@@ -32,14 +33,14 @@ const promotion = (
   </>
 )
 const btn1 = {
-  marginLeft: 16, 
+  marginLeft: 10, 
   paddingTop: 2, 
   paddingBottom: 2, 
   marginBottom: theme.spacing(2),
   marginTop: theme.spacing(3),
   width: "100vw",
   [theme.breakpoints.down('sm')]: {
-    marginLeft: 2,
+    marginLeft: 1,
     width: "100%"
   },
 }
@@ -49,7 +50,10 @@ const btn2 = {
   paddingBottom: theme.spacing(1.5),
   paddingLeft: theme.spacing(6),
   paddingRight: theme.spacing(6),
-  fontSize: "1.125rem"
+  fontSize: "1.125rem",
+  [theme.breakpoints.down('sm')]: {
+    width: "90vw"
+  },
 }
 
 const grid = {
@@ -146,11 +150,11 @@ function Home() {
             <Typography variant="h6" fontSize="1.125rem" paddingBottom={theme.spacing(2)}>
               Credit card number
             </Typography>
-            <TextField fullWidth label="4324  5433  9382  1030" variant="outlined" />
+            <TextField sx={{backgroundColor: "#f4f4f4"}} fullWidth label="4324  5433  9382  1030" variant="outlined" />
             <Typography variant="h6" fontSize="1.125rem" paddingBottom={theme.spacing(2)} paddingTop={theme.spacing(4)}>
               Security code
             </Typography>
-            <TextField fullWidth label="420" variant="outlined" />
+            <TextField sx={{backgroundColor: "#f4f4f4"}} fullWidth label="420" variant="outlined" />
             <Box paddingBottom={theme.spacing(2)} paddingTop={theme.spacing(4)} display="flex" alignItems="center">
               <Checkbox icon={<AdjustIcon />} checkedIcon={<AlbumIcon />} />
               <Typography variant="h6" fontSize="0.875rem" fontWeight={500}>
@@ -163,11 +167,11 @@ function Home() {
             <Typography variant="h6" fontSize="1.125rem" paddingBottom={theme.spacing(2)}>
               Expiration date
             </Typography>
-            <TextField fullWidth label="03/24" variant="outlined" />
+            <TextField sx={{backgroundColor: "#f4f4f4"}} fullWidth label="03/24" variant="outlined" />
             <Typography variant="h6" fontSize="1.125rem" paddingBottom={theme.spacing(2)} paddingTop={theme.spacing(4)}>
               Postal code
             </Typography>
-            <TextField fullWidth label="10119" variant="outlined" />
+            <TextField sx={{backgroundColor: "#f4f4f4"}} fullWidth label="10119" variant="outlined" />
           </Grid>
           <Button sx={btn1} fullWidth color="info" variant="contained">Add Card</Button>  
         </Grid>
